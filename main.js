@@ -35,18 +35,14 @@ const stepByStep = (one, two) => {
 stepByStep(3,6);
 console.log(challenge(4));
 
-const evenSteven = () => {
-    for(let num = 0; num <= 5; num ++) {
-        if (num === 0) {
-            console.log(num + " even");
-        } else if (num % 2 === 0) {
-            console.log(num + " even");
-        } else {
-            console.log(num + " odd");
-        }
+const evenSteven = (number) => {
+    let count = 2;
+    while (count <= number) {
+        console.log(count);
+        count += 2;
     }
 }
-evenSteven();
+evenSteven(8);
 console.log(challenge(5));
 
 const challenge5 = (num) => {
